@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>grid</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .container{
+            /*height: 100vh;*//*alto máximo para moviles*/
+            height: 500px;
+            display: grid;/*inicializando template*/
+            grid-gap: 10px;
+            align-content: center;/*ubica en el centro vertical*/
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px;
+            background-color: skyblue;
+        }
+        .box {
+            background: slateblue;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+
+    </div>
+</body>
+</html>

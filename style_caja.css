@@ -1,0 +1,17 @@
+body{
+    /* margin: 0; */
+}
+.caja1{
+    background-color: #D9DD6B;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    border: 2px solid #035397;
+    margin: 10px 20px 50px 40px;
+}
+
+.caja2{
+    background-color: #D54C4C;
+    width: 30px;
+    height: 30px;
+}
