@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas Chéveres</title>
+    <style>
+        body{
+            font-family: system-ui;
+            /* font-size: system-ui; */
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 1fr 350px;
+        }
+
+        summary{
+            cursor: pointer;
+            /* outline: 0; */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Hola Platzi</h1>
+        </section>
+        <nav>
+            <details open>
+                <summary>
+                    INSTALACIÓN
+                </summary>
+                <ol>
+                    <li> Empezando</li>
+                    <li> Agregar React a un sitio web</li>
+                    <li> Crear una nueva aplicación React</li>
+                    <li> CDN Links</li>
+                    <li> Canales de lanzamientos</li>
+                </ol>
+            </details>
+                
+            <details>
+            <summary>
+                CONCEPTOS PRINCIPALES
+            </summary>
+                <ol>
+                    <li> Hola mundo</li>
+                    <li> Presentando JSX</li>
+                    <li> Renderizando elementos</li>
+                    <li> Componentes y propiedades</li>
+                    <li> Estado y ciclo de vida</li>
+                    <li> Manejando eventos</li>
+                    <li> Renderizado condicional</li>
+                    <li> Listas y keys</li>
+                    <li> Formularios</li>
+                    <li> Levantando el estado</li>
+                    <li> Composición vs. herencia</li>
+                    <li> Pensando en React</li>
+                </ol>
+            </details>
+        
+            <details>
+                <summary>
+                    GUÍAS AVANZADAS
+                </summary>
+                <ol>
+                    <li> Accesibilidad</li>
+                    <li> División de código</li>
+                    <li> Contexto</li>
+                    <li> Límites de errores</li>
+                    <li> Reenvío de refs</li>
+                    <li> Fragmentos</li>
+                    <li> Componentes de orden superior</li>
+                    <li> Integración con otras bibliotecas</li>
+                    <li> JSX en profundidad</li>
+                    <li> Optimizando el rendimiento</li>
+                    <li> Portales</li>
+                    <li> Profiler</li>
+                    <li> React sin ES6</li>
+                    <li> React sin JSX</li>
+                    <li> Reconciliación</li>
+                    <li> Referencias y el DOM</li>
+                    <li> Render Props</li>
+                    <li> Comprobación de tipos estáticos</li>
+                    <li> Modo estricto</li>
+                    <li> Verificación de tipos con PropTypes</li>
+                    <li> Componentes no controlados</li>
+                    <li> Web Components</li>
+                </ol>
+            </details>
+        
+            <details>
+                <summary>
+                    REFERENCIA DE LA API
+                </summary>
+                <ol>
+                    <li> React</li>
+                    <li> React.Component</li>
+                    <li> ReactDOM</li>
+                    <li> ReactDOMServer</li>
+                    <li> Elementos DOM</li>
+                    <li> SyntheticEvent</li>
+                    <li> Utilidades para pruebas</li>
+                    <li> Renderizador de prueba</li>
+                    <li> Requerimientos del entorno de JS</li>
+                    <li> Glosario</li>
+                </ol>
+            </details>
+        
+            <details>
+                <summary>
+                    HOOKS (NUEVO)
+                </summary>
+                <ol>
+                    <li>Presentando a los Hooks</li>
+                    <li>Un vistazo a los Hooks</li>
+                    <li>Usando el Hook de estado</li>
+                    <li>Usando el Hook de efecto</li>
+                    <li>Reglas de los Hooks</li>
+                    <li>Construyendo tus propios Hooks</li>
+                    <li>Referencia de la API de los Hooks</li>
+                    <li>Preguntas frecuentes sobre Hooks</li>
+                </ol>
+            </details>
+        
+            <details>
+                <summary>        
+                    PRUEBAS
+                </summary>
+                <ol>
+                    <li> Visión general de las pruebas</li>
+                    <li> Recetas de pruebas</li>
+                    <li> Entornos de prueba</li>
+                </ol>
+            </details>
+        
+            <details>
+                <summary>
+                    CONTRIBUIR
+                </summary>
+                <ol>
+                    <li>Cómo contribuir</li>
+                    <li>Visión general de la base de código</li>
+                    <li>Notas de implementación</li>
+                    <li>Principios de diseño</li>
+                </ol>
+            </details>
+        
+            <details>
+                <summary>
+                    PREGUNTAS FRECUENTES
+                </summary>
+                <ol>
+                    <li>AJAX y APIs</li>
+                    <li>Babel, JSX y pasos de compilación</li>
+                    <li>Pasando funciones a componentes</li>
+                    <li>Estado del componente</li>
+                </ol>
+            </details>
+        </nav>
+    </main>
+
+<script>
+    //iterando elemento
+    //recibo el objeto al que le di click y lo mostramos.
+    const $detailsList = document.querySelectorAll('details')
+    $detailsList.forEach(($details)=>{
+        //console.log("Hola Details");
+        //console.log($details);
+        $details.querySelector('summary').addEventListener('click', expand)
+        //$summary.addEvenListener('click', hola)
+    })
+
+    function expand() {
+        $detailsList.forEach(($details)=>{
+            $details.removeAttribute('open')
+        })
+    }
+</script>
+</body>
+</html>
