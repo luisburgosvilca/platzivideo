@@ -1,13 +1,14 @@
 body{
     margin: 0px;
-    background-color: #ab88ff;
+    background-color: #8F57FD;
+    font-family: 'Mulish', sans-serif;
 }
 .header{
     width: 100%;
     height: 80px;
     /* background-color: #21c08b; */
     background-color: #0093E9;
-    background-image: linear-gradient(180deg, #0093E9 0%, #ab88ff 100%);
+    background-image: linear-gradient(180deg, #0093E9 0%, #8F57FD 100%);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -34,6 +35,11 @@ body{
     padding: 0%;
     position: absolute;
     text-align: right;
+    margin-top: 40px;
+}
+
+.header__menu:hover ul, ul:hover{
+    display: block;
 }
 
 .header__menu--profile {
@@ -43,6 +49,48 @@ body{
     justify-content: space-around;    
     margin-right: 8px;
     color: white
+}
+
+.header__menu li{
+    margin: 10px 0px;
+}
+
+.header__menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+.header__menu li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.main {
+    margin-top: 52px;
+    text-align: center;
+    height: 300px;
+}
+
+.main__title{
+    color: white;
+    font-size:25px
+}
+
+.main__input{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    height: 50px;    
+    font-family: 'Mulish', sans-serif;
+    padding: 0px 20px;
+    outline: none;
+    width: 70%; 
+}
+
+::placeholder{
+    color: white;
 }
 
 
